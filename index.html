@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Saldi</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <title>Saldi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body class="background">
-        <div class="container-principal superior">
-            <div>
-                <p class="titles">SALDI</p>
-                <p class="regular-big-text">Todos tus juegos, en el mejor lugar!</p>
+<body class="background">
+    <div class="container-principal">
+        <div class="main">
+            <p class="titles">SALDI</p>
+            <p class="regular-big-text">Todos tus juegos, en el mejor lugar!</p>
+        </div>
+
+        <div class="division"></div>
+
+        <p class="carousel-title">Algunos de nuestros juegos destacados!</p>
+        <div class="carousel-container">
+            <button class="carousel-button prev">&#9664;</button>
+            <div class="carousel-inner">
+                <div class="carousel-slide">
+                    <img src="./images/celeste.jpg" class="carousel-img" alt="Celeste">
+                    <img src="./images/sombras-de-guerra.jpg" class="carousel-img" alt="Sombras de Guerra">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/euro-truck-simulator2.jpg" class="carousel-img" alt="Euro Truck Simulator 2">
+                    <img src="./images/borderlands2.jpg" class="carousel-img" alt="Borderlands 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/humankind.jpg" class="carousel-img" alt="Humankind">
+                    <img src="./images/battlefieldV.jpg" class="carousel-img" alt="Battlefield V">
+                </div>
             </div>
-    
-            <div class="division"></div>
+            <button class="carousel-button next">&#9654;</button>
+        </div>
+        
 
-            <div class="container-text">
-                <p class="small-title">Algunos de nuestros juegos destacados!</p>
+        <div class="division"></div>
+
+        <p class="carousel-title">Los más jugados últimamente</p>
+        <div class="images-featured-cont">
+            <div class="image-container">
+                <img src="images/ready-or-not.jpg" class="images-featured">
+                <p class="overlay-text">Ready Or Not <br> $32.99 USD</p>
+            </div>
+            <div class="image-container">
+                <img src="images/palworld.jpg" class="images-featured">
+                <p class="overlay-text">Palworld <br> $14.99 USD</p>
+            </div>
+            <div class="image-container">
+                <img src="images/cyberpunk.jpg" class="images-featured">
+                <p class="overlay-text">Cyberpunk <br> $44.99 USD</p>
             </div>
         </div>
-    </body>
+
+        <div class="division"></div>
+
+        <p class="carousel-title">Novedades populares</p>
+        <div class="images-featured-cont">
+            <div class="image-container">
+                <img src="images/soviet-republic.jpg" class="small-images">
+                <p class="overlay-text">Soviet Republic <br> $19.99 USD</p>
+            </div>
+            <div class="image-container">
+                <img src="images/drug-dealer-simulator.jpg" class="small-images">
+                <p class="overlay-text">Drug Dealer Simulator 2 <br> $12.49 USD</p>
+            </div>
+            <div class="image-container">
+                <img src="images/gladiator-guild-manager.jpg" class="small-images">
+                <p class="overlay-text">Gladiator Guild Manager <br> $7.99 USD</p>
+            </div>
+            <div class="image-container">
+                <img src="images/crime-boss.jpg" class="small-images">
+                <p class="overlay-text">Crime Boss <br> $11.99 USD</p>
+            </div>
+        </div>
+
+        <div class="division"></div>
+
+        <footer>Hecho por: Lautaro Sánchez ©</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>

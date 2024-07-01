@@ -13,11 +13,16 @@
     src: url('fonts/OpenSans-Light.ttf');
 }
 
+.main
+{
+    text-align: center;
+}
+
 body {
+    display: flex;
     margin: 0;
     font-family: 'OpenSans-regular', sans-serif;
     color: white;
-    background-color: #180101;
 }
 
 .container-principal {
@@ -25,7 +30,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background-image: url('images/superposicion-background.jpg');
     background-position: center center;
     background-repeat: repeat-y;
@@ -43,48 +48,162 @@ body {
     z-index: 1;
 }
 
-.titles
-{
+.titles {
     font-family: 'OpenSans-title', sans-serif;
-    font-size: 15mm;
-    text-align: center;
+    font-size: 40mm;
+    margin-bottom: -8mm;
 }
 
-.regular-big-text
-{
-    font-size: 7mm;
-    text-align: center;
+.regular-big-text {
+    font-size: 6mm;
 }
 
-.small-text
-{
+.small-text {
     font-family: 'OpenSans-small';
     font-size: 4mm;
 }
 
-.small-title
-{
+.small-title {
     font-family: 'OpenSans-title', sans-serif;
     font-size: 7mm;
 }
 
-.regular-text
-{
+.regular-text {
     font-size: 5mm;
 }
 
-.division 
-{
-    background-color: rgb(39, 11, 65);
-    height: 5px;
-    margin-left: 100mm;
-    margin-right: 100mm;
+.carousel-title {
+    font-family: 'OpenSans-title', sans-serif;
+    font-size: 9mm;
+    text-align: center;
 }
 
-.container-text
-{
+.division {
+    background-color: rgb(39, 11, 65);
+    height: 5px;
+    margin-top: 10mm;
+    margin-left: 100mm;
+    margin-right: 100mm;
+    border-radius: 2mm;
+}
+
+.container-text {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 500px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 170%;
+}
+
+.carousel-slide {
+    position: relative;
+    min-width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 755px;
+}
+
+.carousel-img {
+    display: flex;
+    height: 264px;
+    width: 462px;
+    align-self: auto;
+    margin-right: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.images-featured
+{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.images-featured-cont
+{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.small-images
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.image-container {
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(95, 77, 255, 0.3); /* Sombras normales */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+.image-container:hover {
+    box-shadow: 0 8px 16px rgb(139, 10, 10); /* Sombras más pronunciadas al pasar el mouse */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay-text {
+    opacity: 4; /* Muestra el texto al pasar el mouse */
+}
+
+.image-container:hover .images-featured {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse */
+}
+
+footer
+{
+    font-family: 'Open-Sans-small', sans-serif;
+    text-align: center;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
 }
